@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>手写 CSS 预处理 | 小尹的个人博客</title>
+    <meta name="description" content="Personal Website">
+    <link rel="icon" href="/images/photo.jpg">
+  <link rel="manifest" href="/images/photo.jpg">
+  <link rel="apple-touch-icon" href="/images/photo.jpg">
+  <meta http-quiv="pragma" cotent="no-cache">
+  <meta http-quiv="expires" cotent="0">
+  <meta http-quiv="pragma" cotent="no-cache, must-revalidate">
+    
+    <link rel="preload" href="/assets/css/0.styles.8eb0d87d.css" as="style"><link rel="preload" href="/assets/js/app.f1ff4b24.js" as="script"><link rel="preload" href="/assets/js/22.1ad40349.js" as="script"><link rel="prefetch" href="/assets/js/10.c2d37694.js"><link rel="prefetch" href="/assets/js/11.f33dd2fb.js"><link rel="prefetch" href="/assets/js/12.5b5e0a86.js"><link rel="prefetch" href="/assets/js/13.7783dffd.js"><link rel="prefetch" href="/assets/js/14.fdd77f34.js"><link rel="prefetch" href="/assets/js/15.710b672b.js"><link rel="prefetch" href="/assets/js/16.2fd56571.js"><link rel="prefetch" href="/assets/js/17.8a0cb4b6.js"><link rel="prefetch" href="/assets/js/18.3d418b80.js"><link rel="prefetch" href="/assets/js/19.a2f419f4.js"><link rel="prefetch" href="/assets/js/2.bea9e773.js"><link rel="prefetch" href="/assets/js/20.a839f8f6.js"><link rel="prefetch" href="/assets/js/21.0040f499.js"><link rel="prefetch" href="/assets/js/23.c327eefe.js"><link rel="prefetch" href="/assets/js/24.4fecb747.js"><link rel="prefetch" href="/assets/js/25.05070c64.js"><link rel="prefetch" href="/assets/js/26.7fa47698.js"><link rel="prefetch" href="/assets/js/27.92743890.js"><link rel="prefetch" href="/assets/js/28.0ab6fc8c.js"><link rel="prefetch" href="/assets/js/29.f6e410ef.js"><link rel="prefetch" href="/assets/js/3.3ede1f01.js"><link rel="prefetch" href="/assets/js/30.9c5ba8a6.js"><link rel="prefetch" href="/assets/js/31.98d0db91.js"><link rel="prefetch" href="/assets/js/32.9ebc7105.js"><link rel="prefetch" href="/assets/js/33.4b6d3aa4.js"><link rel="prefetch" href="/assets/js/34.099d14dc.js"><link rel="prefetch" href="/assets/js/35.86e1e61a.js"><link rel="prefetch" href="/assets/js/36.419d6535.js"><link rel="prefetch" href="/assets/js/4.dd1196e1.js"><link rel="prefetch" href="/assets/js/5.c506c4bf.js"><link rel="prefetch" href="/assets/js/6.9763d998.js"><link rel="prefetch" href="/assets/js/7.1961b880.js"><link rel="prefetch" href="/assets/js/8.f8dfdb84.js"><link rel="prefetch" href="/assets/js/9.72acfe56.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.8eb0d87d.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">小尹的个人博客</span></a> <div class="links" style="max-width:nullpx;"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/html/base.html" class="nav-link">HTML</a></div><div class="nav-item"><a href="/css/base.html" class="nav-link">CSS</a></div><div class="nav-item"><a href="/javascript/base.html" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/frame/vue/vue.html" class="nav-link">前端框架</a></div><div class="nav-item"><a href="/accumulate/1.html" class="nav-link">前端基础</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">算法题库</a></div><div class="nav-item"><a href="/others/1.html" class="nav-link">诗和远方</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微博
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <div class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/html/base.html" class="nav-link">HTML</a></div><div class="nav-item"><a href="/css/base.html" class="nav-link">CSS</a></div><div class="nav-item"><a href="/javascript/base.html" class="nav-link">JavaScript</a></div><div class="nav-item"><a href="/frame/vue/vue.html" class="nav-link">前端框架</a></div><div class="nav-item"><a href="/accumulate/1.html" class="nav-link">前端基础</a></div><div class="nav-item"><a href="/algorithm/" class="nav-link">算法题库</a></div><div class="nav-item"><a href="/others/1.html" class="nav-link">诗和远方</a></div><div class="nav-item"><a href="https://baidu.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  微博
+  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></div> <!----></nav>  <ul class="sidebar-links"><li><div class="sidebar-group first collapsable"><p class="sidebar-heading open"><span>CSS基础</span> <span class="arrow down"></span></p> <ul class="sidebar-group-items"><li><a href="/css/base.html" class="sidebar-link">CSS基础知识</a></li><li><a href="/css/flex.html" class="sidebar-link">布局--CSS精髓</a></li><li><a href="/css/manage.html" class="sidebar-link">如何更好地管理 CSS 代码？</a></li><li><a href="/css/preHandle.html" aria-current="page" class="active sidebar-link">手写 CSS 预处理</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css/preHandle.html#_1-功能需求" class="sidebar-link">1. 功能需求</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css/preHandle.html#_1-1-目标-css-代码" class="sidebar-link">1.1 目标 CSS 代码</a></li></ul></li><li class="sidebar-sub-header"><a href="/css/preHandle.html#_2-编译器" class="sidebar-link">2. 编译器</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css/preHandle.html#_2-1-解析" class="sidebar-link">2.1 解析</a></li><li class="sidebar-sub-header"><a href="/css/preHandle.html#_2-2-转换" class="sidebar-link">2.2 转换</a></li><li class="sidebar-sub-header"><a href="/css/preHandle.html#_2-3-代码生成" class="sidebar-link">2.3 代码生成</a></li></ul></li><li class="sidebar-sub-header"><a href="/css/preHandle.html#_3-代码实现" class="sidebar-link">3. 代码实现</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/css/preHandle.html#_3-1-词法分析" class="sidebar-link">3.1 词法分析</a></li><li class="sidebar-sub-header"><a href="/css/preHandle.html#_3-2-语法分析" class="sidebar-link">3.2 语法分析</a></li><li class="sidebar-sub-header"><a href="/css/preHandle.html#_3-3-转换" class="sidebar-link">3.3 转换</a></li><li class="sidebar-sub-header"><a href="/css/preHandle.html#_3-4-代码生成" class="sidebar-link">3.4 代码生成</a></li></ul></li><li class="sidebar-sub-header"><a href="/css/preHandle.html#总结" class="sidebar-link">总结</a></li></ul></li></ul></div></li></ul> </div> <div class="page"> <div class="content"><h1 id="手写-css-预处理"><a href="#手写-css-预处理" class="header-anchor">#</a> 手写 CSS 预处理</h1> <h2 id="_1-功能需求"><a href="#_1-功能需求" class="header-anchor">#</a> 1. 功能需求</h2> <p>这一课时我们来写一个 CSS 预处理器，它的功能可以理解为精简版的 stylus，主要实现的功能有：</p> <ul><li>用空格和换行符替代花括号、冒号和分号；</li> <li>支持选择器的嵌套组合；</li> <li>支持以“$”符号开头的变量定义和使用。</li></ul> <p>如果你对这种风格不是很熟悉也没关系，通过下面这个例子你就能很快明白。</p> <h3 id="_1-1-目标-css-代码"><a href="#_1-1-目标-css-代码" class="header-anchor">#</a> 1.1 目标 CSS 代码</h3> <p><strong>目标 CSS 代码</strong>，为 5 条样式规则。第 1 条和第 5 条样式规则是最简单的，使用 1 个选择器，定义了 1 条样式属性；第 2 条规则多用了一个标签选择器，样式属性值为多个字符串组成；第 3 条规则使用了类选择器；第 4 条规则增加了属性选择器，并且样式属性增加为 2 条。</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>div {color:darkkhaki;}
+div p {border:1px solid lightgreen;}
+div .a-b {background-color:lightyellow;}
+div .a-b [data] {padding:15px;font-size:12px;}
+.d-ib {display:inline-block;}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>再来看看“源代码”，首先声明了两个变量，然后通过换行缩进定义了上述样式规则中的选择器和样式：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>$ib inline-block
+$borderColor lightgreen
+div
+  p
+    border 1px solid $borderColor
+  color darkkhaki
+  .a-b
+    background-color lightyellow
+    [data]
+      padding 15px
+      font-size 12px
+.d-ib
+  display $ib
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>像上面这种强制缩进换行的风格应用非常广泛，比如编程语言 Python、HTML 模板 pug、预处理器 Sass（以“.sass”为后缀的文件）。</p> <p>这种风格可能有些工程师并不适应，因为缩进空格数不一致就会导致程序解析失败或执行出错。但它也有一些优点，比如格式整齐，省去了花括号等冗余字符，减少了代码量。推荐大家在项目中使用。</p> <h2 id="_2-编译器"><a href="#_2-编译器" class="header-anchor">#</a> 2. 编译器</h2> <p>对预处理器这种能将一种语言（法）转换成另一种语言（法）的程序一般称之为“编译器”。我们平常所知的高级语言都离不开编译器，比如 C++、Java、JavaScript。</p> <p>不同语言的编译器的工作流程有些差异，但大体上可以分成三个步骤：解析（Parsing）、转换（Transformation）及代码生成（Code Generation）。</p> <h3 id="_2-1-解析"><a href="#_2-1-解析" class="header-anchor">#</a> 2.1 解析</h3> <p>解析步骤一般分为两个阶段：<strong>词法分析</strong>和<strong>语法分析</strong>。</p> <p>词法分析就是将接收到的源代码转换成令牌（Token），完成这个过程的函数或工具被称之为词法分析器（Tokenizer 或 Lexer）。</p> <p>令牌由一些代码语句的碎片生成，它们可以是数字、标签、标点符号、运算符，或者其他任何东西。</p> <p>将代码令牌化之后会进入语法分析，这个过程会将之前生成的令牌转换成一种带有令牌关系描述的抽象表示，这种抽象的表示称之为<strong>抽象语法树（Abstract Syntax Tree，AST）</strong>。完成这个过程的函数或工具被称为<strong>语法分析器（Parser）</strong>。</p> <p>抽象语法树通常是一个深度嵌套的对象，这种数据结构不仅更贴合代码逻辑，在后面的操作效率方面相对于令牌数组也更有优势。</p> <p>可以回想一下，我们在浏览器如何渲染页面中提到的解析 HTML 流程也包括了这两个步骤。</p> <h3 id="_2-2-转换"><a href="#_2-2-转换" class="header-anchor">#</a> 2.2 转换</h3> <p>解析完成之后的下一步就是<strong>转换</strong>，即把 AST 拿过来然后做一些修改，完成这个过程的函数或工具被称之为<strong>转换器</strong>（Transformer）。</p> <p>在这个过程中，AST 中的节点可以被修改和删除，也可以新增节点。根本目的就是为了代码生成的时候更加方便。</p> <h3 id="_2-3-代码生成"><a href="#_2-3-代码生成" class="header-anchor">#</a> 2.3 代码生成</h3> <p>编译器的最后一步就是根据转换后的 AST 来生成目标代码，这个阶段做的事情有时候会和转换重叠，但是代码生成最主要的部分还是根据转换后的 AST 来输出代码。完成这个过程的函数或工具被称之为<strong>生成器</strong>（Generator）。</p> <p>代码生成有几种不同的工作方式，有些编译器将会重用之前生成的令牌，有些会创建独立代码</p> <p>表示，以便于线性地输出代码。但是接下来我们还是着重于使用之前生成好的 AST。</p> <p>代码生成器必须知道如何“打印”转换后的 AST 中所有类型的节点，然后递归地调用自身，直到所有代码都被打印到一个很长的字符串中。</p> <h2 id="_3-代码实现"><a href="#_3-代码实现" class="header-anchor">#</a> 3. 代码实现</h2> <p>学习了编译器相关知识之后，我们再来按照上述步骤编写代码。</p> <h3 id="_3-1-词法分析"><a href="#_3-1-词法分析" class="header-anchor">#</a> 3.1 词法分析</h3> <p>在进行词法分析之前，首先要考虑字符串可以被拆分成多少种类型的令牌，然后再确定令牌的判断条件及解析方式。</p> <p>通过分析源代码，可以将字符串分为变量、变量值、选择器、属性、属性值 5 种类型。但其中属性值和变量可以合并成一类进行处理，为了方便后面语法分析，变量可以拆分成变量定义和变量引用。</p> <p>由于缩进会对语法分析产生影响（样式规则缩进空格数决定了属于哪个选择器），所以也要加入令牌对象。</p> <p>因此一个令牌对象结构如下，type 属性表示令牌类型，value 属性存储令牌字符内容，indent 属性记录缩进空格数：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  type: &quot;variableDef&quot; | &quot;variableRef&quot; | &quot;selector&quot; | &quot;property&quot; | &quot;value&quot;, //枚举值，分别对应变量定义、变量引用、选择器、属性、值
+  value: string, // token字符值，即被分解的字符串
+  indent: number // 缩进空格数，需要根据它判断从属关系
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>然后确定各种类型令牌的判断条件：</p> <ul><li>variableDef，以“$”符号开头，该行前面无其他非空字符串；</li> <li>variableRef，以“$”符号开头，该行前面有非空字符串；</li> <li>selector，独占一行，该行无其他非空字符串；</li> <li>property，以字母开头，该行前面无其他非空字符串；</li> <li>value，非该行第一个字符串，且该行第一个字符串为 property 或 variableDef 类型。</li></ul> <p>最后再来确定令牌解析方式。</p> <p>一般进行词法解析的时候，可以逐个字符进行解析判断，但考虑到源代码语法的特殊性——换行符和空格缩进会影响语法解析，所以可以考虑逐行逐个单词进行解析。</p> <p>词法分析代码如下所示：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function tokenize(text) {
+  return text.trim().split(/\n|\r\n/).reduce((tokens, line, idx) =&gt; {
+    const spaces = line.match(/^\s+/) || ['']
+    const indent = spaces[0].length
+    const input = line.trim()
+    const words = input.split(/\s/)
+    let value = words.shift()
+    if (words.length === 0) {
+      tokens.push({
+        type: 'selector',
+        value,
+        indent
+      })
+    } else {
+      let type = ''
+      if (/^\$/.test(value)) {
+        type = 'variableDef'
+      } else if (/^[a-zA-Z-]+$/.test(value)) {
+        type = 'property'
+      } else {
+        throw new Error(`Tokenize error:Line ${idx} &quot;${value}&quot; is not a vairable or property!`)
+      }
+      tokens.push({
+        type,
+        value,
+        indent
+      })
+      while (value = words.shift()) {
+        tokens.push({
+          type: /^\$/.test(value) ? 'variableRef' : 'value',
+          value,
+          indent: 0
+        })
+      }
+    }
+    return tokens;
+  }, [])
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br></div></div><h3 id="_3-2-语法分析"><a href="#_3-2-语法分析" class="header-anchor">#</a> 3.2 语法分析</h3> <p>现在我们来分析如何将上一步生成的令牌数组转化成抽象语法树，树结构相对于数组而言，最大的特点是具有层级关系，哪些令牌具有层级关系呢？</p> <p>从缩进中不难看出，选择器与选择器、选择器与属性都存在层级关系，那么我们可以分别通过 <strong>children 属性</strong>和 <strong>rules 属性</strong>来描述这两类层级关系。</p> <p>要判断层级关系需要借助缩进空格数，所以节点需要增加一个属性 indent。</p> <p>考虑到构建树时可能会产生回溯，那么可以设置一个数组来记录当前构建路径。当遇到非父子关系的节点时，沿着当前路径往上找到其父节点。</p> <p>最后为了简化树结构，这一步也可以将变量值进行替换，从而减少变量节点。</p> <p>所以抽象语法树可以写成如下结构。首先定义一个根节点，在其 children 属性中添加选择器节点，选择器节点相对令牌而言增加了 2 个属性：</p> <ul><li>rules，存储当前选择器的样式属性和值组成的对象，其中值以字符串数组的形式存储；</li> <li>children，子选择器节点。</li></ul> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  type: 'root',
+  children: [{
+    type: 'selector',
+    value: string
+    rules: [{
+      property: string,
+      value: string[],
+    }],
+    indent: number,
+    children: []
+  }]
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>由于考虑到一个属性的值可能会由多个令牌组成，比如 border 属性的值由“1px” “solid” “$borderColor” 3 个令牌组成，所以将 value 属性设置为字符串数组。</p> <p>语法分析代码如下所示。首先定义一个根节点，然后按照先进先出的方式遍历令牌数组，遇到变量定义时，将变量名和对应的值存入到缓存对象中；当遇到属性时，插入到当前选择器节点的 rules 属性中，遇到值和变量引用时都将插入到当前选择器节点 rules 属性数组最后一个对象的 value 数组中，但是变量引用在插入之前需要借助缓存对象的变量值进行替换。当遇到选择器节点时，则需要往对应的父选择器节点 children 属性中插入，并将指针指向被插入的节点，同时记得将被插入的节点添加到用于存储遍历路径的数组中：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function parse(tokens) {
+  var ast = {
+    type: 'root',
+    children: [],
+    indent: -1
+  };
+  let path = [ast]
+  let preNode = ast
+  let node
+  let vDict = {}
+  while (node = tokens.shift()) {
+    if (node.type === 'variableDef') {
+      if (tokens[0] &amp;&amp; tokens[0].type === 'value') {
+        const vNode = tokens.shift()
+        vDict[node.value] = vNode.value
+      } else {
+        preNode.rules[preNode.rules.length - 1].value = vDict[node.value]
+      }
+      continue;
+    }
+    if (node.type === 'property') {
+      if (node.indent &gt; preNode.indent) {
+        preNode.rules.push({
+          property: node.value,
+          value: []
+        })
+      } else {
+        let parent = path.pop()
+        while (node.indent &lt;= parent.indent) {
+          parent = path.pop()
+        }
+        parent.rules.push({
+          property: node.value,
+          value: []
+        })
+        preNode = parent
+        path.push(parent)
+      }
+      continue;
+    }
+    if (node.type === 'value') {
+      try {
+        preNode.rules[preNode.rules.length - 1].value.push(node.value);
+      } catch (e) {
+        console.error(preNode)
+      }
+      continue;
+    }
+    if (node.type === 'variableRef') {
+      preNode.rules[preNode.rules.length - 1].value.push(vDict[node.value]);
+      continue;
+    }
+    if (node.type === 'selector') {
+      const item = {
+        type: 'selector',
+        value: node.value,
+        indent: node.indent,
+        rules: [],
+        children: []
+      }
+      if (node.indent &gt; preNode.indent) {
+        path[path.length - 1].indent === node.indent &amp;&amp; path.pop()
+        path.push(item)
+        preNode.children.push(item);
+        preNode = item;
+      } else {
+        let parent = path.pop()
+        while (node.indent &lt;= parent.indent) {
+          parent = path.pop()
+        }
+        parent.children.push(item)
+        path.push(item)
+      }
+    }
+  }
+  return ast;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br><span class="line-number">33</span><br><span class="line-number">34</span><br><span class="line-number">35</span><br><span class="line-number">36</span><br><span class="line-number">37</span><br><span class="line-number">38</span><br><span class="line-number">39</span><br><span class="line-number">40</span><br><span class="line-number">41</span><br><span class="line-number">42</span><br><span class="line-number">43</span><br><span class="line-number">44</span><br><span class="line-number">45</span><br><span class="line-number">46</span><br><span class="line-number">47</span><br><span class="line-number">48</span><br><span class="line-number">49</span><br><span class="line-number">50</span><br><span class="line-number">51</span><br><span class="line-number">52</span><br><span class="line-number">53</span><br><span class="line-number">54</span><br><span class="line-number">55</span><br><span class="line-number">56</span><br><span class="line-number">57</span><br><span class="line-number">58</span><br><span class="line-number">59</span><br><span class="line-number">60</span><br><span class="line-number">61</span><br><span class="line-number">62</span><br><span class="line-number">63</span><br><span class="line-number">64</span><br><span class="line-number">65</span><br><span class="line-number">66</span><br><span class="line-number">67</span><br><span class="line-number">68</span><br><span class="line-number">69</span><br><span class="line-number">70</span><br><span class="line-number">71</span><br><span class="line-number">72</span><br><span class="line-number">73</span><br><span class="line-number">74</span><br><span class="line-number">75</span><br><span class="line-number">76</span><br><span class="line-number">77</span><br></div></div><h3 id="_3-3-转换"><a href="#_3-3-转换" class="header-anchor">#</a> 3.3 转换</h3> <p>在转换之前我们先来看看要生成的目标代码结构，其更像是一个由一条条样式规则组成的数组，所以我们考虑将抽象语法树转换成“抽象语法数组”。</p> <p>在遍历树节点时，需要记录当前遍历路径，以方便选择器的拼接；同时可以考虑将“值”类型的节点拼接在一起。最后形成下面的数组结构，数组中每个元素对象包括两个属性，selector 属性值为当前规则的选择器，rules 属性为数组，数组中每个元素对象包含 property 和 value 属性：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>{
+  selector: string,
+  rules: {
+    property: string,
+    value: string
+  }[]
+}[]
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>具体代码实现如下，递归遍历抽象语法树，遍历的时候完成选择器拼接以及属性值的拼接，最终返回一个与 CSS 样式规则相对应的数组：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function transform(ast) {
+  let newAst = [];
+  function traverse(node, result, prefix) {
+    let selector = ''
+    if (node.type === 'selector') {
+      selector = [...prefix, node.value];
+      result.push({
+        selector: selector.join(' '),
+        rules: node.rules.reduce((acc, rule) =&gt; {
+          acc.push({
+            property: rule.property,
+            value: rule.value.join(' ')
+          })
+          return acc;
+        }, [])
+      })
+    }
+    for (let i = 0; i &lt; node.children.length; i++) {
+      traverse(node.children[i], result, selector)
+    }
+  }
+  traverse(ast, newAst, [])
+  return newAst;
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br></div></div><p>实现方式比较简单，通过函数递归遍历树，然后重新拼接选择器和属性的值，最终返回数组结构</p> <h3 id="_3-4-代码生成"><a href="#_3-4-代码生成" class="header-anchor">#</a> 3.4 代码生成</h3> <p>有了新的“抽象语法数组”，生成目标代码就只需要通过 map 操作对数组进行遍历，然后将选择器、属性、值拼接成字符串返回即可。</p> <p>具体代码如下：</p> <div class="language- line-numbers-mode"><pre class="language-text"><code>function generate(nodes) {
+  return nodes.map(n =&gt; {
+    let rules = n.rules.reduce((acc, item) =&gt; acc += `${item.property}:${item.value};`, '')
+    return `${n.selector} {${rules}}`
+  }).join('\n')
+}
+</code></pre> <div class="line-numbers-wrapper"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><h2 id="总结"><a href="#总结" class="header-anchor">#</a> 总结</h2> <p>此次动手实践了一个简单的 CSS 预处理器，希望你能更好地掌握 CSS 工具预处理器的基本原理，同时也希望通过这个实现过程带你跨入编译器的大门。编译器属于大家日用而不知的重要工具，像 webpack、Babel这些著名工具以及 JavaScript 引擎都用到了它。</p></div> <div class="page-edit"><!----> <!----></div> <div class="page-nav"><p class="inner"><span class="prev">
+        ←
+        <a href="/css/manage.html" class="prev">
+          如何更好地管理 CSS 代码？
+        </a></span> <!----></p></div> </div> <!----></div></div>
+    <script src="/assets/js/app.f1ff4b24.js" defer></script><script src="/assets/js/22.1ad40349.js" defer></script>
+  </body>
+</html>
